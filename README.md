@@ -1,8 +1,7 @@
 Written by Lily Gates  
-January 2025
 
 ## Description
-Create and save a .png of a QR Code based on user input provided through command-line arguments. The script generates a QR Code from a URL and allows the user to choose between light or dark mode for styling.
+Create and save a .png of a QR Code based on user input provided through command-line arguments. The script generates a QR Code from a URL and allows the user to choose color modes (light, dark, custom) for styling.
 
 
 ## Usage
