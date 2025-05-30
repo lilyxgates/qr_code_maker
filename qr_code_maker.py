@@ -90,16 +90,16 @@ else:  # Custom mode - convert from hexadecimal to RBG input required
      
 img = qr.make_image(fill_color=fill_color, back_color=back_color)
 
-
 # Prompt for file name and save image
 file_name = input("Enter the name to save the newly created QR Code as: ")
 
-# TODO: Create a default name 'qr_code' for filename if none is entered
-if file_name == len(0):
-        file_hame = "qr_code"
+# Use default name if input is empty or just whitespace
+if len(file_name.strip()) == 0:
+    file_name = "qr_code"
 
-img.save(f"{file_name}.png")
-
+# Save the image with the filename and mode appended
+full_file_name = f"{file_name}_{mode}.png"
+img.save(full_file_name)
 
 # Print confirmation statement
-print(f"A QR Code for the URL '{url}' has been saved in '{mode}' mode as '{file_name}.png' in the current directory.")
+print(f"A QR Code for the URL '{url}' has been saved in '{mode}' mode as '{full_file_name}' in the current directory.")
