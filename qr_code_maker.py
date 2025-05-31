@@ -10,8 +10,8 @@ import qrcode
 
 # Initialize QR Code object
 qr = qrcode.QRCode(
-    version=1,    # Controls the size of the QR Code
-    box_size=10,  # Size of each box in pixels
+    version=5,    # Changes the pattern (int 1-40, 40 has most noise)
+    box_size=100,  # Size of each box in pixels, will affect dimension size
     border=4,     # Thickness of border (minimum 4)
 )
 
